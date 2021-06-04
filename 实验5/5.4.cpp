@@ -26,7 +26,7 @@ void InitQueue(sqQueue &Q){
 void EnQueue(sqQueue &Q, ArcType e){
 	//插入元素e为Q的新的队尾元素
 	if((Q.rear + 1) % MAXQSIZE == Q.front)
-		return ERROR; //queue full
+		return; 
 	Q.base[Q.rear] = e; //插入e到队列
 	Q.rear = (Q.rear + 1) % MAXQSIZE; 
 	//循环队列，头+1
@@ -58,12 +58,13 @@ void BFS (AMGraph G, int v){
     while(!QueueEmpty(Q)){ //队列非空   													
 		DeQueue(Q, u);  //队头元素出队并置为u     												
 		for(w = FirstAdjVex(G, u); w >= 0; w = NextAdjVex(G, u, w)){
-			if(!visited[w]){	           										//w为u的尚未访问的邻接顶点 
-				cout << G.vexs[w] << "  ";   visited[w] = true;					//访问w，并置访问标志数组相应分量值为true 
-				EnQueue(Q, w);													//w进队 
-			}//if 
-		}//for
-    }//while 
+			if(!visited[w]){ //判w是否访问过
+				cout << G.vexs[w] << "  ";
+				visited[w] = true; 
+				EnQueue(Q, w); //w进队 
+			}
+		}
+    }
 }//BFS 
 
 int FirstAdjVex(AMGraph G , int v) //求v的第一个未被访问过的邻接点
@@ -72,12 +73,11 @@ int FirstAdjVex(AMGraph G , int v) //求v的第一个未被访问过的邻接点
 	for(i = 0 ; i < G.vexnum ; ++i){
 		if(G.arcs[v][i] !=MaxInt&& visited[i] == false)
 			return i;
-		
 	}
 	return -1;
 }//FirstAdjVex
 
-int NextAdjVex(AMGraph G , int v , int w) //v相对于w的下一个未被访问过的邻接点
+int NextAdjVex(AMGraph G , int v , int w) //从上一次的位置w继续寻找下一个邻接点
 {
 	int i;
 	for(i = w ; i < G.vexnum ; ++i){
