@@ -15,7 +15,9 @@ public class P592 {
 			System.out.println("两个字串相同");
 		else
 			System.out.println("两个字串并不相同");
+
 		System.out.println(result1 + "\n" + result2);
+		scanner.close();
 	}
 
 }
