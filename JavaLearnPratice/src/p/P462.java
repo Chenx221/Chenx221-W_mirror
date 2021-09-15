@@ -1,8 +1,9 @@
 package p;
-
+import java.util.Scanner;
 public class P462 {
 	public static void main(String[] args) {
-		int length = 25; // 建议使用 奇数
+		Scanner scanner = new Scanner(System.in);
+		int length = scanner.nextInt(); // 使用 奇数
 
 		int lmid = (length + 1) / 2; // 提前计算中间数
 
