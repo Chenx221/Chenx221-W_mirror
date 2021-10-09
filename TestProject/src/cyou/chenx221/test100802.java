@@ -1,4 +1,5 @@
 package cyou.chenx221;
+
 //实验二 2
 import java.util.Scanner;
 
@@ -9,8 +10,7 @@ public class test100802 {
 //		int n = scanner.nextInt(); //for test
 		test100802 testfun = new test100802();
 //		System.out.println(testfun.jc(n)); //for test
-		System.out.println("5!+6!+7!+8!=" +
-			(testfun.jc(5) + testfun.jc(6) + testfun.jc(7) + testfun.jc(8)));
+		System.out.println("5!+6!+7!+8!=" + (testfun.jc(5) + testfun.jc(6) + testfun.jc(7) + testfun.jc(8)));
 		scanner.close();
 	}
 
