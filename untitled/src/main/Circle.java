@@ -15,6 +15,6 @@ public class Circle {
     public static void main(String[] args) {
         Circle c1 = new Circle();
         c1.setRedius(10.5);
-        System.out.println(c1.area()0);
+        System.out.println(c1.area());
     }
 }
