@@ -43,8 +43,6 @@ public class Student {
         System.out.println("学号" + s2.getNo() + "\t姓名:" + s2.getName() + "\tJava成绩:" + s2.getJava());
         System.out.println("成绩平均值:" + (s1.getJava() + s2.getJava()) / 2);
         //Student s3 = new Student(); //test
-
-
         System.out.println("学生数:" + getCount()); //实验三 3内容
     }
 }
