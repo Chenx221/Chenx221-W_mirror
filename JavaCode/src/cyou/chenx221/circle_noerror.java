@@ -1,13 +1,13 @@
 package cyou.chenx221;
 
 //实验三 1
-public class circle {
+public class circle_noerror {
     private double radius;
 
-    public circle() {
+    public circle_noerror() {
     }
 
-    public circle(double r) {
+    public circle_noerror(double r) {
         radius = r;
     }
 
@@ -21,8 +21,8 @@ public class circle {
 
 
     public static void main(String[] args) {
-        circle c1 = new circle();
-        circle c2 = new circle(10);
+        circle_noerror c1 = new circle_noerror();
+        circle_noerror c2 = new circle_noerror(10);
         System.out.println("c2的圆面积:"+c2.getArea()+"\t周长:"+c2.getPerimeter());
     }
 }
