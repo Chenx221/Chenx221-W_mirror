@@ -1,6 +1,6 @@
 package cyou.chenx221;
 interface shape{
-    public double area();
+    double area();
 }
 class circle implements shape{
     private double radius;
