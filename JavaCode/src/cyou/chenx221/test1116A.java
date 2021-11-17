@@ -1,4 +1,4 @@
-package cf.chenx221;
+package cyou.chenx221;
 
 public class test1116A {
     public static void main(String[] args) {
