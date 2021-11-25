@@ -13,15 +13,17 @@ public class io1124A {
             if (b==-1){
                 break;
             }
-            System.out.println(b);
+            System.out.print((char)b);
         }
         in.close();
-        FileOutputStream out = new FileOutputStream("C:\\Users\\Chenx221\\Documents\\GitHub\\Chenx221-W\\JavaCode\\src\\cf\\chenx221\\others\\tempfile");
-        String str = "你好世界";
+        FileOutputStream out = new FileOutputStream("C:\\Users\\Chenx221\\Documents\\GitHub\\Chenx221-W\\JavaCode\\src\\cf\\chenx221\\others\\tempfile",true);
+        String str = "\nhello";
         byte[] barr = str.getBytes(); //StandardCharsets.UTF_8
         for (int i:barr){
             out.write(i);
         }
         out.close();
+
+
     }
 }
