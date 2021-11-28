@@ -4,8 +4,8 @@
 #include<cmath>
 class Shape {
 public:
-	double getArea() {}
-	double genLen() {}
+	virtual double getArea() { return 0; }
+	virtual double genLen() { return 0; }
 };
 
 class Rectangle : public Shape {
@@ -55,5 +55,6 @@ public:
 private:
 	double radius;
 };
+
 
 #endif
