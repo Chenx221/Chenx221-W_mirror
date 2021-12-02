@@ -1,4 +1,10 @@
 # Chenx221-W
+2021/12/1 JAVA实验12.1
+
+https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/%e5%ae%9e%e9%aa%8c12.1.docx
+
+https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/JavaSY1201/src/cyou/chenx221
+
 2021/11/25 C++ P94 编程题
 
 https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/TEST/shape
