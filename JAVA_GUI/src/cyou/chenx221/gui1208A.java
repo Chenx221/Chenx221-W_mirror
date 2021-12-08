@@ -62,89 +62,98 @@ public class gui1208A {
             @Override
             public void mouseClicked(MouseEvent e) {
                 String type_string = t1.getText();
+                boolean stop_flag=false;
                 if (type_string.length() == 0) {
                     t2.setText("算式为空");
                 }
                 else {
-                    char[] Ctype_String = type_string.toCharArray();
+                    char[] Ctype_String = type_string.toCharArray();//2*2=
                     for (int i = 0; i < Ctype_String.length; i++) {
-                        int j, k;
-                        for (j = i - 1; j >= 0; j--) {
-                            if ((Ctype_String[j] >= '0' && Ctype_String[j] <= '9') || Ctype_String[j] == '.') {
-                                System.out.println("[DEBUG]Success");
-                            } else {
-                                break;
+                        if(Ctype_String[i] == '/' || (Ctype_String[i] == '*')) {
+                            int j, k;
+                            for (j = i - 1; j >= 0; j--) {
+                                if (!((Ctype_String[j] >= '0' && Ctype_String[j] <= '9') || Ctype_String[j] == '.')) {
+                                    break;
+                                }
                             }
-                        }
-                        for (k = i + 1; k < Ctype_String.length; k++) {
-                            if ((Ctype_String[k] >= '0' && Ctype_String[k] <= '9') || Ctype_String[k] == '.') {
-                                System.out.println("[DEBUG]Success");
-                            } else {
-                                break;
+                            for (k = i + 1; k < Ctype_String.length; k++) {
+                                if (!((Ctype_String[k] >= '0' && Ctype_String[k] <= '9') || Ctype_String[k] == '.')) {
+                                    break;
+                                }
                             }
-                        }
-                        if (Ctype_String[i] == '/') {
-                            type_string = type_string.substring(0, j + 1)
-                                    + (Double.parseDouble(type_string.substring(0, j)) / Double.parseDouble(type_string.substring(j + 1, k)))
-                                    + type_string.substring(k);
-                        } else if (Ctype_String[i] == '*') {
-                            type_string = type_string.substring(0, j + 1)
+                            int temp=j;if(j<0) j=0;//fix for value of j out of range
+                            if (Ctype_String[i] == '/') {
+                                if(Double.parseDouble(type_string.substring(i + 1, k))==0){
+                                    t2.setText("ERROR");stop_flag=true;
+                                    break;
+                                }
+                                type_string = type_string.substring(0, temp + 1)
+                                        + (Double.parseDouble(type_string.substring(j, i)) / Double.parseDouble(type_string.substring(i + 1, k)))
+                                        + type_string.substring(k);
+
+                            } else if (Ctype_String[i] == '*') {
+                                type_string = type_string.substring(0, temp + 1)
                                     + (Double.parseDouble(type_string.substring(j,i)) * Double.parseDouble(type_string.substring(i + 1, k)))
                                     + type_string.substring(k);
+
+                            }
+                            Ctype_String = type_string.toCharArray();
                         }
                     }
+
                     Ctype_String = type_string.toCharArray();
-                    double left = 0, temp = 0;
-                    int flag = 0, step = 0, length = 0;
-                    for (char c : Ctype_String) {
-                        if (c >= '0' && c <= '9') {
-                            temp = temp * 10 + (int) c - 48;//conv char to int
-                            if (length > 0) {
-                                length++;
-                            }
-                        } else if (c == '.') {
-                            length = 1;
-                        } else {
-                            step++;
-                            if (step == 1) {
-                                if (length == 0) {
-                                    left = temp;
-                                } else {
-                                    left = temp / (Math.pow(10, length - 1));
+                    if(!stop_flag) {
+                        double left = 0, temp = 0;
+                        int flag = 0, step = 0, length = 0;
+                        for (char c : Ctype_String) {
+                            if (c >= '0' && c <= '9') {
+                                temp = temp * 10 + (int) c - 48;//conv char to int
+                                if (length > 0) {
+                                    length++;
                                 }
+                            } else if (c == '.') {
+                                length = 1;
                             } else {
-                                step = 1;
-                                if (length != 0) {
-                                    temp /= (Math.pow(10, length - 1));
+                                step++;
+                                if (step == 1) {
+                                    if (length == 0) {
+                                        left = temp;
+                                    } else {
+                                        left = temp / (Math.pow(10, length - 1));
+                                    }
+                                } else {
+                                    if (length != 0) {
+                                        temp /= (Math.pow(10, length - 1));
+                                    }
+                                    switch (flag) {
+                                        case 1:
+                                            left = left + temp;
+                                            break;
+                                        case 2:
+                                            left = left - temp;
+                                            break;
+                                    }
+                                    step = 1;
                                 }
-                                switch (flag) {
-                                    case 1:
-                                        left = left + temp;
+                                temp = 0;
+                                length = 0;
+
+                                switch (c) {//1\2\3\4
+                                    case '+':
+                                        flag = 1;
                                         break;
-                                    case 2:
-                                        left = left - temp;
+                                    case '-':
+                                        flag = 2;
                                         break;
-                                }//1+2-3=
+                                    case '=': {
+                                        t2.setText("运算结果:" + left);
+                                        //System.exit(20);
+                                    }
+                                    default:
+                                        t1.setText(t1.getText() + "\n[遇到错误]");
+                                }
 
                             }
-                            temp = 0;
-                            length = 0;
-
-                            switch (c) {//1\2\3\4
-                                case '+':
-                                    flag = 1;
-                                    break;
-                                case '-':
-                                    flag = 2;
-                                    break;
-                                case '=': {
-                                    t2.setText("运算结果:" + left);
-                                    //System.exit(20);
-                                }
-                                default:
-                                    t1.setText(t1.getText() + "\n[遇到错误]");
-                            }
-
                         }
                     }
                 }
