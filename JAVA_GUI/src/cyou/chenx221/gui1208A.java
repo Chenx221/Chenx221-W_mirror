@@ -11,29 +11,29 @@ public class gui1208A {
         //show a blank window
         Frame f = new Frame("TEST");
         f.setLayout(null);
-        f.setSize(1024,768);
-        f.setLocation(100,200);
+        f.setSize(1024, 768);
+        f.setLocation(100, 200);
         f.setVisible(true);
 
         //show type text field
         TextField t1 = new TextField();
-        t1.setBounds(50,50,500,200);
+        t1.setBounds(50, 50, 500, 200);
         f.add(t1);
 
         TextField t2 = new TextField("运算结果:");
-        t2.setBounds(700,100,100,100);
+        t2.setBounds(700, 100, 100, 100);
         f.add(t2);
 
         Button b1 = new Button("calculate");
-        b1.setBounds(400,400,100,100);
+        b1.setBounds(400, 400, 100, 100);
         f.add(b1);
 
         Button b2 = new Button("reset");
-        b2.setBounds(550,400,100,100);
+        b2.setBounds(550, 400, 100, 100);
         f.add(b2);
 
         Button b3 = new Button("exit");
-        b3.setBounds(700,400,100,100);
+        b3.setBounds(700, 400, 100, 100);
         f.add(b3);
 
         //respond button3 clicked event
@@ -61,96 +61,61 @@ public class gui1208A {
         b1.addMouseListener(new MouseAdapter() {//1+5*2/4=
             @Override
             public void mouseClicked(MouseEvent e) {
-                String type_string=t1.getText();
-//                while(true) {//处理除法的内容
-//                    int chuwz = type_string.indexOf('/');
-//                    if (chuwz != -1) {
-//                        int startp=0,endp=0;
-//                        for(int i=chuwz-1;((type_string.charAt(i)>='0'&&type_string.charAt(i)<='9')||type_string.charAt(i)=='.')&&i>=0;i--){
-//                            startp=i;
-//                        }
-//                        for(int i=chuwz+1;((type_string.charAt(i)>='0'&&type_string.charAt(i)<='9')||type_string.charAt(i)=='.')&&i<type_string.length();i++){
-//                            endp=i;
-//                        }
-//                        double d1=Double.parseDouble(type_string.substring(startp,chuwz));
-//                        double d2=Double.parseDouble(type_string.substring(chuwz+1,endp+1));
-//                        //debug
-////                            System.out.println("d1:"+d1+"\nd2:"+d2);
-////                            System.exit(60);
-//                        t1.setText(t1.getText().substring(0,startp)+(d1/d2)+t1.getText().substring(endp+1));
-//                        System.out.println(t1.getText());
-//                        System.exit(70);
-//                    }
-//                    else {
-//                        break;
-//                    }
-//                }
-//                while(true) {
-//                    int chewz = type_string.indexOf('*');
-//                    if (chewz != -1) {
-//
-//                    }
-//                    else {
-//                        break;
-//                    }
-//                }
-                if(type_string.length()==0){
+                String type_string = t1.getText();
+                if (type_string.length() == 0) {
                     t2.setText("算式为空");
                 }
                 else {
                     char[] Ctype_String = type_string.toCharArray();
-                    //
-                    for(int i=0;i<Ctype_String.length;i++){
-                        switch(Ctype_String[i]){
-                            case '/':{
-                                for(int j=i-1;j>=0;j--){
-                                    if((Ctype_String[j]>='0'&&Ctype_String[j]<='9')||Ctype_String[j]=='.'){
-                                        continue;
-                                    }
-                                    else{
-                                        break;
-                                    }
-                                    double temp=Double.parseDouble()
-
-                                }
+                    for (int i = 0; i < Ctype_String.length; i++) {
+                        int j, k;
+                        for (j = i - 1; j >= 0; j--) {
+                            if ((Ctype_String[j] >= '0' && Ctype_String[j] <= '9') || Ctype_String[j] == '.') {
+                                System.out.println("[DEBUG]Success");
+                            } else {
+                                break;
                             }
-                            case '*':{
-
+                        }
+                        for (k = i + 1; k < Ctype_String.length; k++) {
+                            if ((Ctype_String[k] >= '0' && Ctype_String[k] <= '9') || Ctype_String[k] == '.') {
+                                System.out.println("[DEBUG]Success");
+                            } else {
+                                break;
                             }
-
+                        }
+                        if (Ctype_String[i] == '/') {
+                            type_string = type_string.substring(0, j + 1)
+                                    + (Double.parseDouble(type_string.substring(0, j)) / Double.parseDouble(type_string.substring(j + 1, k)))
+                                    + type_string.substring(k);
+                        } else if (Ctype_String[i] == '*') {
+                            type_string = type_string.substring(0, j + 1)
+                                    + (Double.parseDouble(type_string.substring(j,i)) * Double.parseDouble(type_string.substring(i + 1, k)))
+                                    + type_string.substring(k);
                         }
                     }
-
-
-
-
-
-
-                    //
+                    Ctype_String = type_string.toCharArray();
                     double left = 0, temp = 0;
-                    int flag = 0, step = 0,length=0;
+                    int flag = 0, step = 0, length = 0;
                     for (char c : Ctype_String) {
                         if (c >= '0' && c <= '9') {
                             temp = temp * 10 + (int) c - 48;//conv char to int
-                            if(length>0){
+                            if (length > 0) {
                                 length++;
                             }
-                        }
-                        else if(c=='.'){
-                            length=1;
-                        }
-                        else{
+                        } else if (c == '.') {
+                            length = 1;
+                        } else {
                             step++;
                             if (step == 1) {
-                                if(length==0){
+                                if (length == 0) {
                                     left = temp;
+                                } else {
+                                    left = temp / (Math.pow(10, length - 1));
                                 }
-                                else{
-                                    left = temp/(Math.pow(10,length-1));
-                                }
-                            } else if (step == 2) {
-                                if(length!=0){
-                                    temp/=(Math.pow(10,length-1));
+                            } else {
+                                step = 1;
+                                if (length != 0) {
+                                    temp /= (Math.pow(10, length - 1));
                                 }
                                 switch (flag) {
                                     case 1:
@@ -160,9 +125,10 @@ public class gui1208A {
                                         left = left - temp;
                                         break;
                                 }//1+2-3=
-                                step = 1;
+
                             }
-                            temp = 0;length=0;
+                            temp = 0;
+                            length = 0;
 
                             switch (c) {//1\2\3\4
                                 case '+':
@@ -175,12 +141,6 @@ public class gui1208A {
                                     t2.setText("运算结果:" + left);
                                     //System.exit(20);
                                 }
-
-                                //未实现的内容
-//                            case '*':
-//                                flag=3;break;
-//                            case '/':
-//                                flag=4;break;
                                 default:
                                     t1.setText(t1.getText() + "\n[遇到错误]");
                             }
@@ -195,7 +155,8 @@ public class gui1208A {
         f.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                f.setVisible(false);f.dispose();
+                f.setVisible(false);
+                f.dispose();
             }
         });
     }
