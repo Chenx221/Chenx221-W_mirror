@@ -1,0 +1,4 @@
+"D:\Program Files\toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Program Files/toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe" -G Ninja C:\Users\Chenx221\Documents\GitHub\Chenx221-W\TEST\Project2-test
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Chenx221/Documents/GitHub/Chenx221-W/TEST/Project2-test/cmake-build-debug
