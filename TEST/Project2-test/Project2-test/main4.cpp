@@ -3,8 +3,8 @@
 
 using namespace std;
 int main() {
-	set<int> s;//ÉıĞò
-	set <int, greater<int>> x;//½µĞò
+	set<int> s;//å‡åº
+	set <int, greater<int>> x;//é™åº
 	s.insert(123);
 	s.insert(666);
 	s.insert(233);

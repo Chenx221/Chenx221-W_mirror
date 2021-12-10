@@ -1,7 +1,5 @@
 # ninja log v5
-21	779	6607222781891515	CMakeFiles/Project2_test.dir/Project2-test/main2.cpp.obj	3f382693ea794901
-11	805	6607222782320366	CMakeFiles/Project2_test.dir/Project2-test/main5.cpp.obj	7c6b49a332ccfd1
-6	782	6607222782051088	CMakeFiles/Project2_test.dir/Project2-test/main3.cpp.obj	3905349db726e750
-0	786	6607222782110930	CMakeFiles/Project2_test.dir/Project2-test/main.cpp.obj	ae97c7d1778dd9f6
-15	800	6607222782260525	CMakeFiles/Project2_test.dir/Project2-test/main4.cpp.obj	cd7cbb240e5e2353
-0	549	6607223341606923	Project2_test.exe	36584b30c8bc7a12
+1	698	6607234612198929	CMakeFiles/Project2_test.dir/Project2-test/main.cpp.obj	ae97c7d1778dd9f6
+699	907	6607234613944263	Project2_test.exe	34e2a7a98c22815c
+0	616	6607236871491049	CMakeFiles/Project2_test.dir/Project2-test/main.cpp.obj	33b42a250e4fa5fd
+619	785	6607236873153202	Project2_test.exe	bb2b277b2bcdb5cc

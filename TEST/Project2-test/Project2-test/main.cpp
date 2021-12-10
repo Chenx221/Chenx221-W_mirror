@@ -6,14 +6,14 @@ int main() {
 	//vector<string> v1(10, "test");
 	//vector<string> v2{ "a","b","c","d" };
 	//vector<int>v3(5);
-	////cout << "v1ÈÝÆ÷µÄÈÝÁ¿´óÐ¡Îª:"<<v1.capacity() << endl;
-	////cout << "v1ÈÝÆ÷Êµ¼ÊÔªËØÊýÁ¿Îª:"<<v1.size() << endl;
-	////cout << v2[0] << endl; cout << v2.at(2) << endl;//»ñÈ¡ÈÝÆ÷ÖÐµÄÊý¾Ý
+	////cout << "v1å®¹å™¨çš„å®¹é‡å¤§å°ä¸º:"<<v1.capacity() << endl;
+	////cout << "v1å®¹å™¨å®žé™…å…ƒç´ æ•°é‡ä¸º:"<<v1.size() << endl;
+	////cout << v2[0] << endl; cout << v2.at(2) << endl;//èŽ·å–å®¹å™¨ä¸­çš„æ•°æ®
 	//v1[0] = "hello";
 	////v0.assign(10,"hello");
 	//v3.assign(0, 11);
 	//cout << v3.size() << endl;
-	//for (int i = 0; i < v3.size(); i++) {//Êä³öv0
+	//for (int i = 0; i < v3.size(); i++) {//è¾“å‡ºv0
 	//	cout << v3.at(i)<<"\t";
 	//}
 	////cout << endl;
@@ -41,6 +41,6 @@ int main() {
 	for (rpos = v2.rbegin(); rpos != v2.rend(); rpos++) {
 		cout << *rpos << endl;
 	}
-	cout <<endl<< "v2Í·:"<<v2.front()<<"\tv2Î²:"<<v2.back()<<endl;
+	cout <<endl<< "v2å¤´:"<<v2.front()<<"\tv2å°¾:"<<v2.back()<<endl;
 	
 }

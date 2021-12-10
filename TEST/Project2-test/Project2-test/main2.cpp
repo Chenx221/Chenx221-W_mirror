@@ -9,7 +9,7 @@ int main() {
 		cout << i << " ";
 	}
 	cout << endl;
-	arr1.swap(arr2);//½»»»Ê±ÒªÇó´óĞ¡ÏàÍ¬
+	arr1.swap(arr2);//äº¤æ¢æ—¶è¦æ±‚å¤§å°ç›¸åŒ
 	for (int i : arr1) {
 		cout << i << " ";
 	}
