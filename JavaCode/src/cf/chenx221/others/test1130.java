@@ -7,10 +7,10 @@ import java.io.FileOutputStream;
 
 public class test1130 {
     public static void main(String[] args) throws Exception {
-        int[][] iarr = new int[15][65];
-        char[][] carr = new char[15][65];
+        int[][] iarr = new int[38][40];//修改这里，如果有数据规模上的变动
+        char[][] carr = new char[38][40];//同上
         //input data start
-        BufferedInputStream fis = new BufferedInputStream(new FileInputStream("datanum.txt"));
+        BufferedInputStream fis = new BufferedInputStream(new FileInputStream("C:/Users/Chenx221/Desktop/11111.txt"));//文件路径
         for (int i = 0; i < iarr.length; i++) {
             for (int j = 0; j < iarr[i].length; j++) {
                 iarr[i][j] = fis.read() - 48;
@@ -30,7 +30,7 @@ public class test1130 {
                         carr[y][x++] = ' ';
                         break;
                     case 1:
-                        carr[y][x++] = '@';
+                        carr[y][x++] = '*';
                         break;
                     default:
                         System.exit(10); //error
