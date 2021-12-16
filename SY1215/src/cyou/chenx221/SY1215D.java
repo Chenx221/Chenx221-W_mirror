@@ -127,6 +127,7 @@ public class SY1215D {
                         jd1.add(jb5);
                         if(new String(jpf2.getPassword()).equals(password)){
                             //password=new String(jpf2.getPassword(); //need to fix
+                            
                         }
                         else{
 

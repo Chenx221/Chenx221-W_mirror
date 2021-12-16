@@ -1,7 +1,7 @@
 # Chenx221-W
 2021/12/15 JAVA实验
 无题(仅调试书上代码)
-https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/JAVA_GUI/src/cyou/chenx221/gui1214*.java
+https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/SY1215/src/cyou/chenx221/SY1215*.java
 
 2021/12/1 JAVA实验12.1
 
@@ -31,7 +31,7 @@ https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/java%e5%ae%9e%e9%aa%
 
 https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/JavaCode/src/cyou/chenx221/Student.java
 
-https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/JavaCode/src/cyou/chenx221/circle.java
+https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/JavaCode/src/cyou/chenx221/circle_noerror.java
 
 2021/10/11 实验二
 
