@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="211214C.cpp" />
+    <ClCompile Include="open_read_file.cpp" />
+    <ClCompile Include="rw_file.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="file.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
