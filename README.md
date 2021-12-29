@@ -1,4 +1,11 @@
 # Chenx221-W
+已移除敏感信息
+2021/12/29 JAVA实验复习
+
+https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/%e5%ae%9e%e9%aa%8c%e5%a4%8d%e4%b9%a0.docx
+
+https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/sy1229/src/cyou/chenx221
+
 2021/12/15 JAVA实验
 无题(仅调试书上代码)
 
