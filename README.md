@@ -1,6 +1,10 @@
 # Chenx221-W
 已移除敏感信息
 
+2021/12/29 Java打包合集
+
+https://git.chenx221.cyou/attachments/57d6277f-3345-4b35-a96b-73ccfa0f9a82
+
 2021/12/29 JAVA实验复习
 
 https://git.chenx221.cyou/chenx221/Chenx221-W/src/branch/21/%e5%ae%9e%e9%aa%8c%e5%a4%8d%e4%b9%a0.docx
