@@ -1,3 +1,0 @@
-C:/Users/Chenx221/Documents/GitHub/Chenx221-W/testcpp/cmake-build-debug/CMakeFiles/testcpp.dir
-C:/Users/Chenx221/Documents/GitHub/Chenx221-W/testcpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Chenx221/Documents/GitHub/Chenx221-W/testcpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
