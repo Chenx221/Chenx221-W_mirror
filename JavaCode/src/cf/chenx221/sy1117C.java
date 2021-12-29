@@ -13,5 +13,6 @@ public class sy1117C {
         for (String i:arr){
             System.out.println(i);
         }
+
     }
 }
