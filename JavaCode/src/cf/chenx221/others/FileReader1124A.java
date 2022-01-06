@@ -16,5 +16,6 @@ public class FileReader1124A {
         writer.write(str);
         writer.write("\n");
         writer.close();
+        double d1=123.5D;
     }
 }

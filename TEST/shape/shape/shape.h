@@ -5,7 +5,7 @@
 class Shape {
 public:
 	virtual double getArea() { return 0; }
-	virtual double genLen() { return 0; }
+	virtual double getLen() { return 0; }
 };
 
 class Rectangle : public Shape {

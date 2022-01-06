@@ -4,13 +4,13 @@
 using namespace std;
 int main() {
 	double d1, d2, d3; cin >> d1 >> d2 >> d3;
-	Rectangle* r3 = new Rectangle(d1, d2);
-	Circle* c3 = new Circle(d3);
+	Shape* r3 = new Rectangle(d1, d2);
+	Shape* c3 = new Circle(d3);
 	cout << "矩形的面积为:" << r3->getArea() << "\t周长为:" << r3->getLen() << endl;
 	cout << "圆的面积为:" << c3->getArea() << "\t周长为:" << c3->getLen() << endl;
 
-	Rectangle* r2 = new Rectangle(2, 4);
-	Circle* c2 = new Circle(10);
+	Shape* r2 = new Rectangle(2, 4);
+	Shape* c2 = new Circle(10);
 	Rectangle r1(2, 4);
 	Circle c1(10);
 	cout << "矩形的面积为:" <<r2->getArea() << "\t周长为:" << r2->getLen() << endl;
