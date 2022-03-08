@@ -10,3 +10,5 @@ MySQL installer: https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-instal
 Navicat 15 Crack: https://hk.chenx221.cyou/share/73DBnsxx
 
 MYSQL SERVER 5.7: https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-5.7.37-winx64.msi
+
+https://dev.mysql.com/downloads/file/?id=509489
