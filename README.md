@@ -3,6 +3,8 @@
 
 https://download3.vmware.com/software/wkst/file/VMware-workstation-full-16.2.2-19200509.exe
 
+ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+
 https://vault.centos.org/7.3.1611/isos/x86_64/CentOS-7-x86_64-DVD-1611.iso
 
 ------------
