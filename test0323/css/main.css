@@ -1,0 +1,19 @@
+/* 注释 */
+body{
+    background-color: #000000
+}
+
+p{
+    color: red;
+    font-family: 微软雅黑;
+}
+
+.ptest{
+    color: blue;
+    font-family: 微软雅黑;
+}
+
+#test001{
+    color: yellow;
+    font-family: 微软雅黑;
+}
