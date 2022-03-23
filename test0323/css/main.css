@@ -1,19 +1,28 @@
 /* 注释 */
 body{
-    background-color: #000000
+    margin: 0 auto;
+    width: 80%;
+    font-family: 微软雅黑;
+    line-height: 200px;
+    text-align: right;
 }
 
 p{
     color: red;
-    font-family: 微软雅黑;
 }
 
 .ptest{
     color: blue;
-    font-family: 微软雅黑;
+    font-weight: 900;
+    font-style: italic;
 }
 
 #test001{
-    color: yellow;
-    font-family: 微软雅黑;
+    color: rgb(129, 129, 122);
+    text-decoration:solid;
+}
+
+.url{
+    text-decoration: none;
+    font: italic 12px/20px 微软雅黑;
 }
