@@ -35,7 +35,7 @@ h1 em{
     height: auto;
 }
 
-.hot{
+.hot,.foot{
     width: 602px;
     margin: 0 auto;
 }
@@ -48,4 +48,21 @@ h1 em{
 }
 .hot em{
     text-decoration: underline;
+}
+
+#textfoot{
+    font-weight: bold;
+    text-align: center;
+}
+#text1,p{
+    text-indent: 2em;
+}
+.foot h3{
+    height:20px; 
+    font-weight: normal;
+}
+.foot p{
+    height: 15px;
+    font-size: 12px;
+    font-style: italic;
 }
