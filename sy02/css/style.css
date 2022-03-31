@@ -1,0 +1,51 @@
+body{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.head{
+    text-align: center;
+}
+
+h1{
+    font-family: 微软雅黑;
+    color: darkgrey;
+}
+h1 strong{
+    font-size: 30px;
+    font-weight: normal;
+}
+h1 em{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.sort{
+    text-align: center;
+}
+.sort h2{
+    font-size: 14px;
+    text-align: left;
+}
+.sort p{
+    font-size: 18px;
+}
+.sort img{
+    width: 100%;
+    height: auto;
+}
+
+.hot{
+    width: 602px;
+    margin: 0 auto;
+}
+.hot img{
+    width: 100%;
+    height: auto;
+}
+.hot p{
+    text-indent:2em;
+}
+.hot em{
+    text-decoration: underline;
+}
