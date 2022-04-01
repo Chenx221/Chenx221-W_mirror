@@ -1,4 +1,4 @@
-body{
+body {
     width: 980px;
     margin: 0 auto;
     font-family: 微软雅黑;
@@ -6,68 +6,82 @@ body{
     color: #a5a5a5;
 }
 
-.head{
+.head {
     height: 80px;
     text-align: center;
 }
-#text2{
+
+#text2 {
     font-size: 30px;
     font-weight: normal;
 }
-#text3{
+
+#text3 {
     font-size: 14px;
 }
 
-.sort{
+.sort {
     text-align: center;
-}   
-.sort h2{
+}
+
+.sort h2 {
     font-size: 14px;
     text-align: left;
 }
-.sort img{
+
+.sort img {
     width: 100%;
     height: auto;
 }
-.sort p{
+
+.sort p {
     font-size: 18px;
     height: 15px;
     font-family: 楷体;
 }
 
-.hot,.foot{
+.hot,
+.foot {
     width: 602px;
     margin: 0 auto;
 }
-.hot img{
+
+.hot img {
     width: 100%;
     height: auto;
 }
-.hot p{
-    text-indent:2em;
+
+.hot p {
+    text-indent: 2em;
     font-family: 楷体;
     line-height: 30px;
 }
-#text4{
+
+#text4 {
     margin-top: -10px;
 }
-.hot span{
+
+.hot span {
     text-decoration: underline;
 }
 
-#textfoot{
+#textfoot {
     font-weight: bold;
     text-align: center;
 }
-#text1,p{
+
+#text1,
+p {
     text-indent: 2em;
 }
-.foot h3{
-    height:18px; 
+
+.foot h3 {
+    height: 18px;
     font-weight: normal;
     font-size: large;
 }
-.foot p{
+
+.foot p {
     height: 15px;
     font-size: 14px;
     font-style: italic;
