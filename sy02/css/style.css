@@ -1,38 +1,38 @@
 body{
     width: 980px;
     margin: 0 auto;
+    font-family: 微软雅黑;
+    background-color: #ededed;
+    color: #a5a5a5;
 }
 
 .head{
+    height: 80px;
     text-align: center;
 }
-
-h1{
-    font-family: 微软雅黑;
-    color: darkgrey;
-}
-h1 strong{
+#text2{
     font-size: 30px;
     font-weight: normal;
 }
-h1 em{
+#text3{
     font-size: 14px;
-    font-weight: normal;
 }
 
 .sort{
     text-align: center;
-}
+}   
 .sort h2{
     font-size: 14px;
     text-align: left;
 }
-.sort p{
-    font-size: 18px;
-}
 .sort img{
     width: 100%;
     height: auto;
+}
+.sort p{
+    font-size: 18px;
+    height: 15px;
+    font-family: 楷体;
 }
 
 .hot,.foot{
@@ -45,8 +45,13 @@ h1 em{
 }
 .hot p{
     text-indent:2em;
+    font-family: 楷体;
+    line-height: 30px;
 }
-.hot em{
+#text4{
+    margin-top: -10px;
+}
+.hot span{
     text-decoration: underline;
 }
 
@@ -58,11 +63,13 @@ h1 em{
     text-indent: 2em;
 }
 .foot h3{
-    height:20px; 
+    height:18px; 
     font-weight: normal;
+    font-size: large;
 }
 .foot p{
     height: 15px;
-    font-size: 12px;
+    font-size: 14px;
     font-style: italic;
+    font-family: 楷体;
 }
