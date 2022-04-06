@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.tte {
+    margin-right: 20px;
+    float: left;
+    height: 300px;
+    width: 300px;
+}
+body{
+    background-image: url(../img/e.png);
+    background-repeat: repeat;
+    background-position: 20% 30%;
+    background-attachment: fixed;
+}
