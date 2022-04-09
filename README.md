@@ -31,6 +31,8 @@ SSH Client
 XShell & XFTP:
 https://www.xshell.com/zh/free-for-home-school/
 
+https://pan.baidu.com/s/1N5XmOPA2l4L6ujOhkI65qg?pwd=2333 &nbsp;提取码：2333 
+
 PuTTY:
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
