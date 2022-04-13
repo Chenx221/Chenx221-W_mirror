@@ -37,7 +37,7 @@ https://www.xshell.com/zh/free-for-home-school/
 
 https://pan.baidu.com/s/1N5XmOPA2l4L6ujOhkI65qg?pwd=2333 &nbsp;提取码：2333 
 
-<h3>Notice:&nbsp;XShell启动报丢失dll文件的可以点击<a href="https://docs.microsoft.com/ja-jp/cpp/windows/latest-supported-vc-redist?view=msvc-170">这里</a>下载安装vc2012 2015+的运行时</h3>
+<h3>Notice:&nbsp;XShell启动报丢失dll文件的可以点击<a href="https://docs.microsoft.com/ja-jp/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2012-vc-110-update-4">这里</a>下载安装vc2012 2015+的运行时</h3>
 
 PuTTY:
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
