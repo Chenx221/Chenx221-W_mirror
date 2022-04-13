@@ -13,19 +13,83 @@ body {
     width: 980px;
     height: 627px;
     background: url(../img/bg.jpg) no-repeat;
-    padding-top: 10px;
+    padding-top: 2px;
 }
 
-.navigation{
-    /* margin-top: 10px; */
-    padding-top: 7px;
+.navigation {
     height: 86px;
     background: url(../img/nav.png) no-repeat center;
+    padding: 15px 0 0 127px;
 }
-.navigation span{
+
+.navigation span {
     line-height: 86px;
     padding: 0 30px;
+    color: #505050;
 }
-#specialtxt{
-    margin-right: 300px;
+
+#specialtxt {
+    margin-right: 240px;
+}
+
+.event {
+    width: 980px;
+    height: 435px;
+    margin: 0 auto;
+    background: url(../img/dongtai.jpg) 60px 15px no-repeat;
+}
+
+.event .new1,
+.event .new2,
+.event .new3 {
+    padding-top: 140px;
+    margin-left: 30px;
+    float: left;
+    width: 294px;
+}
+
+.event .text1 {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 9px 0 18px 10px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.event .text2 {
+    color: #b6b6b6;
+    font-size: 12px;
+    padding: 9px 0 0 10px;
+    line-height: 20px;
+    height: 60px;
+}
+
+.sample {
+    background: url(../img/xinshang.jpg) center no-repeat;
+    margin: 0 auto;
+    width: 980px;
+    height: 442px;
+    padding-left: 65px;
+}
+
+.sampleimg img {
+    margin-left: 55px;
+    padding: 170px 0 0 0;
+}
+
+.footer {
+    margin: 20px auto 0;
+    height: 80px;
+    background: url(../img/footer_bg.jpg) repeat-x;
+}
+
+.footer p {
+    color: white;
+    line-height: 80px;
+    text-align: center;
+}
+
+.qrcode img {
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
 }
