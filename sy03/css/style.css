@@ -1,0 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #fdfdfd;
+    font-family: 微软雅黑;
+}
+
+.header {
+    margin: 0 auto;
+    width: 980px;
+    height: 627px;
+    background: url(../img/bg.jpg) no-repeat;
+    padding-top: 10px;
+}
+
+.navigation{
+    /* margin-top: 10px; */
+    padding-top: 7px;
+    height: 86px;
+    background: url(../img/nav.png) no-repeat center;
+}
+.navigation span{
+    line-height: 86px;
+    padding: 0 30px;
+}
+#specialtxt{
+    margin-right: 300px;
+}
