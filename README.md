@@ -37,6 +37,8 @@ https://www.xshell.com/zh/free-for-home-school/
 
 https://pan.baidu.com/s/1N5XmOPA2l4L6ujOhkI65qg?pwd=2333 &nbsp;提取码：2333 
 
+<h3>Notice:&nbsp;XShell启动报丢失dll文件的可以点击<a href="https://docs.microsoft.com/ja-jp/cpp/windows/latest-supported-vc-redist?view=msvc-170">这里</a>下载安装vc2012 2015+的运行时</h3>
+
 PuTTY:
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
@@ -44,9 +46,6 @@ Termius:
 https://www.termius.com/windows
 
 ------------
-<h3>Notice:&nbsp;Navicat启动报丢失dll文件的可以点击<a href="https://docs.microsoft.com/ja-jp/cpp/windows/latest-supported-vc-redist?view=msvc-170">这里</a>下载安装vc2012 2015+的运行时</h3>
-
-
 
 Navicat 16 (解压密码password): 
 https://pan.baidu.com/s/1q6jLg_RGaWEinGYzofLlIw?pwd=2333 
