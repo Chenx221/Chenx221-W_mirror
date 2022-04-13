@@ -44,6 +44,10 @@ Termius:
 https://www.termius.com/windows
 
 ------------
+<h3>Notice:&nbsp;Navicat启动报丢失dll文件的可以点击<a href="https://docs.microsoft.com/ja-jp/cpp/windows/latest-supported-vc-redist?view=msvc-170">这里</a>下载安装vc2012 2015+的运行时</h3>
+
+
+
 Navicat 16 (解压密码password): 
 https://pan.baidu.com/s/1q6jLg_RGaWEinGYzofLlIw?pwd=2333 
 提取码2333 
