@@ -25,7 +25,8 @@ body {
 .navigation span {
     line-height: 86px;
     padding: 0 30px;
-    color: #505050;
+    /* color: #505050; */
+    color:rgb(104, 86, 73);
 }
 
 #specialtxt {
