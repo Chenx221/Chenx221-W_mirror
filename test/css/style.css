@@ -1,0 +1,33 @@
+/* ul{
+    list-style-type: circle;
+} */
+
+.unsortlist1 li {
+    list-style: none;
+    line-height: 35px;
+    height: 35px;
+    background: url(../img/emote.png) left no-repeat;
+    padding-left: 35px;
+}
+
+a:link img{
+    height: 20px;
+    width: 20px;
+}
+a:visited img{
+    height: 30px;
+    width: 30px;
+}
+a:hover img{
+    height: 40px;
+    width: 40px;
+}
+a:active img{
+    height: 50px;
+    width: 50px;
+}
+
+#link1:hover{
+    font-weight: bolder;
+    color: red;
+}
