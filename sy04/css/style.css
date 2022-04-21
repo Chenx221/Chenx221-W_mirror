@@ -135,10 +135,13 @@ body {
     width: 320px;
     line-height: 314px;
 }
-.content .fashon{
-    margin-top: 10px;
+
+.content .fashon {
+    margin-top: 80px;
+    width: 980px;
 }
-.content .fashon p{
+
+#tc1 {
     height: 45px;
     line-height: 45px;
     background-color: #ea6c46;
@@ -148,9 +151,59 @@ body {
     font-size: 19px;
 }
 
+.content .fashon .fashon_container {
+    height: 362px;
+    background-color: white;
+    border: 1px #dcd2b9 solid;
+}
 
+.content .fashon .fashon_container .sort {
+    text-align: center;
+    padding: 15px 0px;
+}
 
+.content .fashon .fashon_container .sortitem {
+    display: inline-block;
+    border: 1px #dcd2b9 solid;
 
+}
 
+.content .fashon .fashon_container .sortitem img {
+    border-bottom: 1px #dcd2b9 solid;
+}
+
+.content .fashon .fashon_container .sortitem p {
+    font-size: 23px;
+    color: #8d8d8d;
+    line-height: 67px;
+}
+
+.content .fashon .fashon_container .sortitem ul {
+    text-align: center;
+    background-color: #f3734e;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.content .fashon .fashon_container .sortitem li {
+    display: inline-block;
+    background: url(../img/gouwu.jpg) no-repeat;
+    width: 200px;
+}
+
+.content .fashon .fashon_container .sortitem span {
+    line-height: 38px;
+    color: white;
+
+}
+
+.marbdiv {
+    margin-bottom: 13px;
+}
 
 /* content style end */
+
+.footer{
+    height: 150px;
+    background-color: black;
+}
