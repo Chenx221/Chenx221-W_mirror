@@ -206,12 +206,10 @@ body {
 .footer{
     height: 150px;
     background-color: black;
+    padding-top:35px;
 }
 .footer p{
     color: white;
     text-align: center;
-    position: relative;
-    left: 50%;
-    top: 50%;
     /* line-height: 150px; */
 }
