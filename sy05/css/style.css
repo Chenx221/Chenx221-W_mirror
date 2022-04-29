@@ -1,0 +1,176 @@
+/* default style start */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    list-style: none;
+}
+
+/* default style end */
+/* global style start */
+body {
+    /* width: 980px; */
+
+    font-family: 微软雅黑;
+    color: #dd8684;
+}
+
+/* global style end */
+/* header,navi style start */
+.header {
+    width: 980px;
+    height: 61px;
+    margin: 0 auto;
+    padding: 20px 0px 10px 0px;
+}
+
+.navi {
+    background: #fe668f;
+    height: 47px;
+}
+
+.navi ul {
+    margin: 0 auto;
+    width: 980px;
+}
+
+.navi li {
+    float: left;
+}
+
+.navi li a {
+    display: inline-block;
+    padding: 0px 50px;
+    line-height: 47px;
+    height: 47px;
+    text-decoration: none;
+    color: white;
+}
+
+.navi li:hover,
+.navi li:visited {
+    background-color: #fe9ab6;
+}
+
+.navi li .spa {
+    background-color: #fe9ab6;
+}
+
+/* header,navi style end */
+
+/* banner style start */
+.banner {
+    background: url(../img/banner.jpg) no-repeat;
+    width: 980px;
+    height: 429px;
+    margin: 0 auto;
+}
+
+/* banner style end */
+/* form style start */
+form {
+    background: url(../img/content_bg.jpg) no-repeat;
+    height: 934px;
+    width: 980px;
+    margin: 0 auto;
+}
+
+form .reg_step {
+    height: 80px;
+    margin-left: 140px;
+    background: url(../img/step.jpg) 125px center no-repeat;
+}
+
+form .reg_step span,
+form .reg_title span {
+    font-size: 21px;
+    line-height: 80px;
+    font-weight: lighter;
+}
+
+form .reg_title {
+    margin-left: 140px;
+    border-bottom: 1px solid #dd8684;
+    width: 450px;
+}
+
+form .reg_title span {
+    line-height: 50px;
+}
+
+form table {
+    width: 521px;
+    margin-left: 197px;
+    line-height: 47px;
+    font-size: 13px;
+}
+
+.type {
+    width: 65px;
+    text-align: right;
+}
+
+form table span {
+    margin-right: 20px;
+}
+
+form table .hw {
+    width: 320px;
+    height: 28px;
+    border: 1px solid #dd8684;
+}
+
+form table select {
+    color: #dd8684;
+}
+
+form table .hw2 {
+    width: 170px;
+    height: 20px;
+    border: 1px solid #dd8684;
+}
+
+form textarea {
+    width: 385px;
+    height: 135px;
+    border: 1px solid #dd8684;
+    color: #aaaaaa;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 12px;
+}
+
+/* placefix样式为修复与文字之间的水平对齐 */
+.placefix {
+    vertical-align: -10%;
+}
+
+/* form style end */
+/* submit style start */
+.reg_submit {
+    margin: 0 auto;
+    width: 166px;
+    height: 46px;
+}
+
+.reg_submit .submit {
+    background: url(../img/btn.jpg) no-repeat;
+    width: 166px;
+    height: 46px;
+    margin-right: 10px;
+}
+
+/* submit style end */
+/* footer style start */
+.footer {
+    height: 65px;
+    margin: 0 auto;
+    padding: 40px 0px 0px 0px;
+    background: #fe668f;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    line-height: 27px;
+    font-size: 14px;
+}
