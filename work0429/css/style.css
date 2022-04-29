@@ -50,7 +50,7 @@ body {
 }
 
 .ad banner {
-    width: 600px;
+    width: 612px;
     height: 500px;
 }
 
@@ -59,4 +59,14 @@ body {
     object-fit: cover;
     width: 1000px;
     height: 612px;
+}
+
+.ad .container1 {
+    width: 248px;
+    height: 100px;
+    float: left;
+    border: 1px solid #dbdbdb;
+}
+#b1{
+    background: url(../img/pic01.jpg) 20px center no-repeat;
 }
