@@ -138,6 +138,7 @@ form textarea {
     padding: 18px;
     background-color: rgba(0, 0, 0, 0);
     font-size: 12px;
+    resize: none;
 }
 
 /* placefix样式为修复与文字之间的水平对齐 */
