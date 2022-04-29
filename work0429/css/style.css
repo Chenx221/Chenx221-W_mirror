@@ -49,14 +49,14 @@ body {
     background-color: #ababab;
 }
 
-.ad banner{
+.ad banner {
     width: 600px;
     height: 500px;
 }
+
 /* object-fit:https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit */
-.ad .banner img{
+.ad .banner img {
     object-fit: cover;
     width: 1000px;
-    height: 700px;
-
+    height: 612px;
 }
