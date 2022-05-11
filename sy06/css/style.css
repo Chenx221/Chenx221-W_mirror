@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 微软雅黑;
+    margin: 0 auto;
+}
+
+.bar_bg {
+    background-color: #f7f7f7;
+    height: 30px;
+}
+
+.bar_bg .function_bar {
+    width: 980px;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.bar_bg .function_bar a {
+    vertical-align: middle;
+    font-size: 12px;
+    color: rgb(108, 109, 109);
+}
+
+.bar_bg .function_bar .bar_left {
+    float: left;
+    height: 30px;
+    margin-top: 2px;
+}
+
+.bar_bg .function_bar .bar_left a {
+    margin: 0px 3px;
+}
+
+.bar_bg .function_bar .bar_right {
+    float: right;
+    height: 30px;
+}
+
+.bar_bg .function_bar .bar_right a {
+    text-align: center;
+    display: inline-block;
+    border-style: solid;
+    border-color: rgb(204, 212, 223);
+    border-width: 0px 1px 0px 0px;
+    border-radius: 2px;
+    width: 84px;
+}
+
+.navi {
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 5px solid #d3d3d3;
+}
+
+.navi dt {
+    background: url(../img/logo.jpg) 0px 50% no-repeat;
+    height: 100px;
+    width: 160px;
+    float: left;
+    margin-left: -85px;
+}
+
+.navi dd {
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    /* margin: 0px 40px; */
+    font-size: 14px;
+    width: 125px;
+    text-align: center;
+    color: rgb(108, 109, 109);
+}
+
+.navi dd:hover {
+    border-bottom: 5px solid #e67616;
+    color: #e67616;
+}
+
+.content {
+    height: 1080px;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.content .download_ad,
+.content .date_select,
+.content .ticket {
+    margin-bottom: 25px;
+}
+
+.content .date_select td {
+    height: 75px;
+    width: 140px;
+    text-align: center;
+    border-top: 2px solid #ffc293;
+    border-bottom: 2px solid #ffc293;
+    border-left: 2px solid #ffc293;
+    background-color: #fff8f2;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.content .date_select td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 30%;
+    color: rgb(108, 109, 109);
+}
+
+.content .date_select td:hover {
+    background: none;
+    border-bottom: none;
+    height: 76px;
+    padding-top: 4px;
+}
+
+.content .ticket table {
+    width: 980px;
+    border-collapse: collapse;
+}
+
+.content .ticket table {
+    color: #808080;
+}
+
+.content .ticket table th {
+    background-color: #f8f8f8;
+    line-height: 35px;
+}
+
+.content .ticket table tr {
+    text-align: center;
+}
+
+.content .ticket table td {
+    /* background-color: #ffe8c8; */
+    height: 90px;
+}
+
+.content .ticket table .start_time {
+    color: #ff7600;
+    font-size: 24px;
+}
+
+.content .ticket table .start_end {
+    text-align: left;
+    font-size: 14px;
+}
+
+.content .ticket table .start_end span {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+
+}
+
+.content .ticket table .text_a {
+    color: white;
+    background: #ff7600;
+}
+
+.content .ticket table .text_b {
+    color: white;
+    background: #0366ff;
+}
+
+.content .ticket table .model {
+    font-size: 14px;
+}
+
+.content .ticket table .price {
+    font-size: 14px;
+}
+
+.content .ticket table .buy_btn a {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    background-color: #ff7600;
+    color: white;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.footer {
+    background: url(../img/footer_bg.png) repeat-x;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #636363;
+    font-size: 14px;
+}
