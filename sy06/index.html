@@ -1,3 +1,6 @@
+<!-- BY Chenx221(chenx221@yandex.com) -->
+<!-- Last-Modified:2022/5/12 -->
+
 <!DOCTYPE html>
 
 <head>
@@ -11,25 +14,37 @@
     <div class="bar_bg">
         <div class="function_bar">
             <div class="bar_left">
+                <!-- IGNORE ME: -->
+                <!-- <a href="https://demo.chenx221.cyou/test/index5.html">登录</a> -->
                 <a href="#">登录</a>
                 <a href="#">免费注册</a>
             </div>
             <div class="bar_right">
-                <a href="#" onmousemove="show_usermenu()">个人中心</a>
-                <div class="usermenu" hidden="true">
-                    <ul>
-                        <li>已完成订单</li>
-                        <li>未完成订单</li>
-                        <li>我的保险</li>
-                        <li>账户安全</li>
-                        <li>个人信息</li>
-                        <li>常用联系人</li>
-                    </ul>
-                </div>
-                <a href="#">使用须知</a>
-                <a href="#">收藏夹</a>
-                <a href="#">货物快运</a>
-                <a href="#" style="border-right: none;">联系我们</a>
+                <ul>
+                    <li onmousemove="show_usermenu(this)" onmouseout="hide_usermenu(this)" class="lv1">
+                        <a href="#">个人中心</a>
+                        <ul class="usermenu">
+                            <li><a href="#">已完成订单</a></li>
+                            <li><a href="#">未完成订单</a></li>
+                            <li><a href="#">我的保险</a></li>
+                            <li><a href="#">账户安全</a></li>
+                            <li><a href="#">个人信息</a></li>
+                            <li><a href="#">常用联系人</a></li>
+                        </ul>
+                    </li>
+                    <li class="lv1">
+                        <a href="#">使用须知</a>
+                    </li>
+                    <li class="lv1">
+                        <a href="#">收藏夹</a>
+                    </li>
+                    <li class="lv1">
+                        <a href="#">货物快运</a>
+                    </li>
+                    <li class="lv1">
+                        <a href="#" style="border-right: none;">联系我们</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -71,7 +86,7 @@
                     <th>票价</th>
                     <th>购票</th>
                 </tr>
-                <tr>
+                <tr class="ticket_content">
                     <td class="start_time">06:30</td>
                     <td class="start_end"><span class="text_a">始</span>省汽车客运站<br><span class="text_b">终</span>阳江</td>
                     <td class="model">空调坐席</td>
@@ -79,7 +94,7 @@
                     <td class="buy_btn"><a href="#">购票</a></td>
 
                 </tr>
-                <tr>
+                <tr class="ticket_content">
                     <td class="start_time">07:30</td>
                     <td class="start_end"><span class="text_a">始</span>省汽车客运站<br><span class="text_b">终</span>阳江</td>
                     <td class="model">空调坐席</td>
@@ -87,7 +102,7 @@
                     <td class="buy_btn"><a href="#">购票</a></td>
 
                 </tr>
-                <tr>
+                <tr class="ticket_content">
                     <td class="start_time">08:30</td>
                     <td class="start_end"><span class="text_a">始</span>省汽车客运站<br><span class="text_b">终</span>阳江</td>
                     <td class="model">空调坐席</td>
@@ -95,7 +110,7 @@
                     <td class="buy_btn"><a href="#">购票</a></td>
 
                 </tr>
-                <tr>
+                <tr class="ticket_content">
                     <td class="start_time">09:30</td>
                     <td class="start_end"><span class="text_a">始</span>省汽车客运站<br><span class="text_b">终</span>阳江</td>
                     <td class="model">空调坐席</td>
@@ -105,9 +120,12 @@
                 </tr>
             </table>
         </div>
+        <!-- fix Cannot read properties of undefined (reading 'xxx') -->
+        <script type="text/javascript" src="js/initial.js"></script>
     </div>
     <div class="footer">
         <!-- 快滚回家版权所有2000-2016京ICP备08001421号 京公网安备110108007702 -->
         赶快回家版权所有2000-2016京ICP备08001421号 京公网安备110108007702
     </div>
 </body>
+<!-- BY Chenx221(chenx221@yandex.com) -->
