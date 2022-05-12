@@ -15,7 +15,9 @@ a {
 }
 
 body {
-    font-family: 微软雅黑;
+    /* font-family: 微软雅黑; */
+    /* 解决某些情况下的乱码问题 */
+    font-family: '\5FAE\8F6F\96C5\9ED1';
     margin: 0 auto;
 }
 
