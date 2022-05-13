@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无题</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img id="logo_left" src="img/logo.png" />
+            <img id="logo_right" src="img/pic04.png" />
+        </div>
+    </div>
+    <div class="content">
+        <div class="navi">
+            <ul>
+                <li>首页</li>
+                <li>萌宠领养</li>
+                <li>萌宠医院</li>
+                <li>萌宠食品</li>
+                <li>萌宠咨询</li>
+                <li>注册会员</li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="img/banner.jpg" />
+        </div>
+        <div class="reg_form">
+            <form>
+                <div class="reg_title"><span>会员注册</span></div>
+                <div id="reg_content1">
+                    <table>
+                        <tr>
+                            <td><span>昵称：</span></td>
+                            <td>
+                                <input type="text" name="nickname" id="nickname" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>邮箱：</span></td>
+                            <td>
+                                <input type="text" name="email" id="email" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>手机：</span></td>
+                            <td>
+                                <input type="text" name="phone" id="phone" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>设置密码：</span></td>
+                            <td>
+                                <input type="password" name="password" id="password" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>确认密码：</span></td>
+                            <td>
+                                <input type="password" name="password2" id="password2" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="reg_title"><span>宠物信息</span></div>
+                <div id="reg_content2">
+                    <table>
+                        <tr>
+                            <td><span>所属种类：</span></td>
+                            <td>
+                                <select id="kind">
+                                    <option>-请选择-</option>
+                                    <option>猫</option>
+                                    <option>狗</option>
+                                    <option>我也不知道这里有什么选项</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>性别：</span></td>
+                            <td>
+                                <input type="radio" name="sex" value="male" style="line-height: 42px;" />男
+                                <input type="radio" name="sex" value="female" />女
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>年龄：</span></td>
+                            <td>
+                                <select id="agea">
+                                    <!-- 原先想着用Js生成选择项
+                                    不过现在找到了更合适的方法
+                                    所以这里只有一个请选择的选项 -->
+                                    <option>-请选择-</option>
+                                </select>
+                                <!-- 改进的内容，使用可滑动的条实现年龄选择
+                                增加数值预览，这里有用到js -->
+                                <input type="range" name="age" id="age" min="1" max="100" value="1"
+                                    oninput="age_change()" />
+                                <label id="age_output" for="age">1</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>喜爱的食物：</span></td>
+                            <td class="foood">
+                                <!-- 这里讲的到底是人还是动物？ -->
+                                <input type="checkbox" name="food" value="noodle" id="spec_food" />面食
+                                <input type="checkbox" name="food" value="grass" />青草
+                                <input type="checkbox" name="food" value="meat" />肉类
+                                <input type="checkbox" name="food" value="zaliang" />杂粮
+                                <input type="checkbox" name="food" value="fruit" />水果
+                                <input type="checkbox" name="food" value="vegetable" />蔬菜
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>备注：</span></td>
+                            <td>
+                                <textarea name="remark" id="remark" cols="30" rows="10">请填写备注内容。</textarea>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <input type="submit" id="sb" value="完成注册" />
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- ??? -->
+        <p id="foot_p">Copyright © 2006-2016 QIANNIANZHILIANcom, All rights reserved.</p>
+        <p>2001-2018，版权所有 萌宠俱乐部 85CP备13385453</p>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>

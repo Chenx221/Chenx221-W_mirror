@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#shape{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+}
+#submit{
+    position: relative;
+    left: 50%;
+}
