@@ -78,7 +78,16 @@ body {
     height: 500px;
 }
 
-.content .jieshao img {
+.content .jieshao ul{
+    height: 133px;
+    position: relative;
+}
+.content .jieshao ul li{
+    float: left;
+    padding: 0px 9.5px;
+}
+
+.content .jieshao .jieshao_div img {
     float: left;
     margin: 35px 30px 0px 0px;
 }

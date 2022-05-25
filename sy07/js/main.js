@@ -1,5 +1,23 @@
-var pause_tese_img = false;
+var pause_tese_img = false; // 对手动变化的图片进行暂停
+var speed = 1; //envir 变速
 
+// 环境展示 变速
+var base = document.getElementById("envir");
+base.innerHTML += base.innerHTML;
+base.style.width = base.getElementsByTagName("li").length * base.getElementsByTagName("li")[0].offsetWidth + "px";
+base.style.left = "0px";
+var envir_timer = setInterval(function () {
+    base.style.left = parseInt(base.style.left) - 1 + "px";
+    if ((parseInt(base.style.left) * -1) > (parseInt(base.style.width) / 2)) {
+        base.style.left = 0;
+        console.log("complete 1 loop"); // debug
+    }
+}, 30 / speed);
+
+
+
+
+// 图片手动变化，以及对pause_tese_img的更改
 function ir1() {
     document.getElementById("img-right1").src = "img/txt_111.jpg";
     document.getElementById("img-left").src = "img/111.jpg";
@@ -28,6 +46,7 @@ function un_ir3() {
     pause_tese_img = false
 }
 
+//图像定时变换
 var n = 1;
 var src_array = ["img/111.jpg", "img/222.jpg", "img/333.jpg"];
 var tese_img = setInterval(function () {
@@ -36,4 +55,4 @@ var tese_img = setInterval(function () {
     if (pause_tese_img == false) { document.getElementById("img-left").src = src_array[n]; }
     else { console.log("手动选择中，图片变化暂停"); }
     n++;
-}, 4000);
+}, 4000 / speed);
