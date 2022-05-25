@@ -3,14 +3,14 @@ var speed = 1; //envir 变速
 
 // 环境展示 变速
 var base = document.getElementById("envir");
-base.innerHTML += base.innerHTML;
-base.style.width = base.getElementsByTagName("li").length * base.getElementsByTagName("li")[0].offsetWidth + "px";
-base.style.left = "0px";
-var envir_timer = setInterval(function () {
+base.innerHTML += base.innerHTML; //复制所有Li元素
+base.style.width = base.getElementsByTagName("li").length * base.getElementsByTagName("li")[0].offsetWidth + "px"; //计算ul的宽度
+base.style.left = "0px"; //好像没什么卵用
+var envir_timer = setInterval(function () { // 定时器，一半宽度为一轮
     base.style.left = parseInt(base.style.left) - 1 + "px";
     if ((parseInt(base.style.left) * -1) > (parseInt(base.style.width) / 2)) {
         base.style.left = 0;
-        console.log("complete 1 loop"); // debug
+        console.log("1 loop completed"); // debug
     }
 }, 30 / speed);
 
@@ -52,7 +52,7 @@ var src_array = ["img/111.jpg", "img/222.jpg", "img/333.jpg"];
 var tese_img = setInterval(function () {
     if (n < 0 || n > 2) { n = 0; }
     console.log("tese_img current:" + n); //debug
-    if (pause_tese_img == false) { document.getElementById("img-left").src = src_array[n]; }
+    if (pause_tese_img == false) { document.getElementById("img-left").src = src_array[n]; }// 如果暂停，则不变换
     else { console.log("手动选择中，图片变化暂停"); }
     n++;
 }, 4000 / speed);
