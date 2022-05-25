@@ -16,6 +16,14 @@ var envir_timer = setInterval(function () { // 定时器，一半宽度为一轮
 }, 30 / speed);
 
 
+var n = 1;
+var src_array = ["img/01.jpg", "img/02.jpg", "img/03.jpg"];
+var banner_image = setInterval(function () {
+    if (n < 0 || n > 2) { n = 0; }
+    console.log("banner_image current:" + n); //debug
+    document.getElementById("banner_img").src = src_array[n];// 如果暂停，则不变换
+    n++;
+}, 5000 / speed);
 
 
 // 图片手动变化，以及对pause_tese_img的更改
@@ -48,13 +56,13 @@ function un_ir3() {
 }
 
 //图像定时变换
-var n = 1;
-var src_array = ["img/111.jpg", "img/222.jpg", "img/333.jpg"];
+var n2 = 1;
+var src2_array = ["img/111.jpg", "img/222.jpg", "img/333.jpg"];
 var tese_img = setInterval(function () {
-    if (n < 0 || n > 2) { n = 0; }
-    console.log("tese_img current:" + n); //debug
-    if (pause_tese_img == false) { document.getElementById("img-left").src = src_array[n]; }// 如果暂停，则不变换
+    if (n2 < 0 || n2 > 2) { n2 = 0; }
+    console.log("tese_img current:" + n2); //debug
+    if (pause_tese_img == false) { document.getElementById("img-left").src = src2_array[n2]; }// 如果暂停，则不变换
     else { console.log("手动选择中，图片变化暂停"); }
-    n++;
+    n2++;
 }, 4000 / speed);
 // By Chenx221

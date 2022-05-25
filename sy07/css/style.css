@@ -70,6 +70,13 @@ body {
     height: 580px;
 }
 
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* 实现对图像的裁切 */
+}
+
 .content {
     width: 980px;
     margin: 0 auto;
@@ -79,11 +86,12 @@ body {
     height: 500px;
 }
 
-.content .jieshao ul{
+.content .jieshao ul {
     height: 133px;
     position: relative;
 }
-.content .jieshao ul li{
+
+.content .jieshao ul li {
     float: left;
     padding: 0px 9.5px;
 }
@@ -196,4 +204,5 @@ body {
     text-align: center;
     font-size: 14px;
 }
+
 /* By Chenx221 */
