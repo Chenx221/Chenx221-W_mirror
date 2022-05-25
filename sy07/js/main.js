@@ -1,3 +1,4 @@
+// By Chenx221
 var pause_tese_img = false; // 对手动变化的图片进行暂停
 var speed = 1; //envir 变速
 
@@ -56,3 +57,4 @@ var tese_img = setInterval(function () {
     else { console.log("手动选择中，图片变化暂停"); }
     n++;
 }, 4000 / speed);
+// By Chenx221
