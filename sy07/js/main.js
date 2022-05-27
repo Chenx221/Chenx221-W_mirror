@@ -1,5 +1,6 @@
 // By Chenx221
 var pause_tese_img = false; // 对手动变化的图片进行暂停
+var pause_envir_img = false; // 对横向滚动的图片进行暂停
 var speed = 1; //envir 变速
 
 // 环境展示 变速
@@ -8,7 +9,7 @@ base.innerHTML += base.innerHTML; //复制所有Li元素
 base.style.width = base.getElementsByTagName("li").length * base.getElementsByTagName("li")[0].offsetWidth + "px"; //计算ul的宽度
 base.style.left = "0px"; //好像没什么卵用
 var envir_timer = setInterval(function () { // 定时器，一半宽度为一轮
-    base.style.left = parseInt(base.style.left) - 1 + "px";
+    if (pause_envir_img == false) { base.style.left = parseInt(base.style.left) - 1 + "px"; }
     if ((parseInt(base.style.left) * -1) > (parseInt(base.style.width) / 2)) {
         base.style.left = 0;
         console.log("1 loop completed"); // debug
@@ -65,4 +66,17 @@ var tese_img = setInterval(function () {
     else { console.log("手动选择中，图片变化暂停"); }
     n2++;
 }, 4000 / speed);
+
+// function pause_envir() to change pause_envir value to true
+function pause_envir() {
+    pause_envir_img = true;
+    // console.log("pause_envir:true"); 暂不启用
+    console.log("pause_envir_img:true");
+}
+// function resume_envir() to change pause_envir value to false
+function resume_envir() {
+    pause_envir_img = false;
+    // console.log("pause_envir:false"); 暂不启用
+}
+
 // By Chenx221
