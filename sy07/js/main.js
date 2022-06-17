@@ -2,6 +2,7 @@
 var pause_tese_img = false; // 对手动变化的图片进行暂停
 var pause_envir_img = false; // 对横向滚动的图片进行暂停
 var speed = 1; //envir 变速
+var pause_img = false;
 
 // 环境展示 变速
 var base = document.getElementById("envir");
@@ -21,11 +22,19 @@ var n = 1;
 var src_array = ["img/01.jpg", "img/02.jpg", "img/03.jpg"];
 var banner_image = setInterval(function () {
     if (n < 0 || n > 2) { n = 0; }
-    console.log("banner_image current:" + n); //debug
-    document.getElementById("banner_img").src = src_array[n];// 如果暂停，则不变换
+    if (!pause_img) {
+        document.getElementById("banner_img").src = src_array[n];// 如果暂停，则不变换
+    }
     n++;
 }, 5000 / speed);
 
+function show_img(n) {
+    pause_img = true;
+    document.getElementById("banner_img").src = "img/0" + n + ".jpg";
+}
+function unshow_img() {
+    pause_img = false;
+}
 
 // 图片手动变化，以及对pause_tese_img的更改
 function ir1() {
