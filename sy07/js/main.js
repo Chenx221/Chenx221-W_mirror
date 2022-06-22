@@ -24,13 +24,21 @@ var banner_image = setInterval(function () {
     if (n < 0 || n > 2) { n = 0; }
     if (!pause_img) {
         document.getElementById("banner_img").src = src_array[n];// 如果暂停，则不变换
+        clean_b();
+        document.getElementById("b"+(n+1)).style.backgroundColor = "rgb(227,122,122,50%)";
     }
     n++;
 }, 5000 / speed);
-
+function clean_b(){
+    document.getElementById("b1").style.backgroundColor = "rgba(240, 240, 240,0.5)";
+    document.getElementById("b2").style.backgroundColor = "rgba(240, 240, 240,0.5)";
+    document.getElementById("b3").style.backgroundColor = "rgba(240, 240, 240,0.5)";
+}
 function show_img(n) {
     pause_img = true;
     document.getElementById("banner_img").src = "img/0" + n + ".jpg";
+    clean_b();
+    document.getElementById("b"+(n)).style.backgroundColor = "rgb(227,122,122,50%)";
 }
 function unshow_img() {
     pause_img = false;
