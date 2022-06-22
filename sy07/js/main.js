@@ -17,6 +17,13 @@ var envir_timer = setInterval(function () { // 定时器，一半宽度为一轮
     }
 }, 30 / speed);
 
+function aevent(){
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        //实现平滑滚动
+    })
+}
 
 var n = 1;
 var src_array = ["img/01.jpg", "img/02.jpg", "img/03.jpg"];
